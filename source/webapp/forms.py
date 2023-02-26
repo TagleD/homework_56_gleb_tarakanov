@@ -15,9 +15,3 @@ class ProductForm(forms.ModelForm):
             'balance': 'Введите остаток товара',
             'coast': 'Цена товара'
         }
-
-        def clean_name(self):
-            name = self.cleaned_data.get('name')
-            if len(name) < 2:
-                raise ValidationError('Наименование должен быть длинее 2-ух символов')
-            return name

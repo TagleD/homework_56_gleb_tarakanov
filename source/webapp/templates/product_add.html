@@ -1,45 +1,15 @@
 {% extends 'base.html' %}
-
 {% block title %}Добавление товара{% endblock %}
-
 {% block content %}
     <div class="container">
-        <div class="row d-flex justify-content-center card-margin-product">
-            <div class="col-6 card text-bg-dark card-padding card-padding-bottom">
-                <form action="{% url 'products_add' %}" method="post">
-                    {% csrf_token %}
-                    <div class="mb-3">
-                        <h2>Добавление товара</h2>
-                    </div>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Название товара</label>
-                        <input type="text" id="name" name="name" class="form-control"
-                               placeholder="Дробовик Ребекки">
-                    </div>
-                    <div class="mb-3">
-                        <label for="coast" class="form-label">Стоимость товара</label>
-                        <input type="text" id="coast" name="coast" class="form-control"
-                               placeholder="7000">
-                    </div>
-                    <div class="mb-3">
-                        <label for="image" class="form-label">URL картинки товара</label>
-                        <input type="text" id="image" name="image" class="form-control"
-                               placeholder="https://static.wikia.nocookie.net/prefix=ru">
-                    </div>
-                    <div class="mb-3">
-                        <label for="category" class="form-label">Выберите категорию</label>
-                        <select name="category" id="category" class="form-select">
-                            {% for category in categories %}
-                                <option value="{{ category.category }}">{{ category.category }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Введите описание товара</label>
-                        <textarea id="description" name="description" rows="10" cols="53"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary green">Добавить</button>
-                </form>
+        <div class="row d-flex justify-content-center card-margin">
+            <div class="col-7 card text-bg-dark card-padding">
+                <div class="form">
+                    <h3>Добавить новый товар</h3>
+                    <form action="{% url 'products_add' %}" method="post">
+                        {% include 'partial/create_and_update_form.html' with button_text='Создать' %}
+                    </form>
+                </div>
             </div>
         </div>
     </div>
