@@ -42,7 +42,11 @@ body {
 }
 
 .edit-buttons{
-    width: 70px;
+    width: 90px;
+}
+
+.edit-buttons-detail{
+    width: 105px;
 }
 
 .margin-right-red {
@@ -71,4 +75,8 @@ body {
 
 .image-margin {
     margin-top: 39px;
+}
+
+.title-delete {
+    margin-bottom: 20px;
 }

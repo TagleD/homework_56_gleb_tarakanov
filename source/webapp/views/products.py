@@ -62,3 +62,14 @@ def products_edit_view(request, pk):
     form = ProductForm(instance=product)
     context = {'form': form, 'product': product}
     return render(request, 'product_edit.html', context=context)
+
+
+def products_delete_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, 'confirm_delete.html', context={'product': product})
+
+
+def confirm_delete(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    product.delete()
+    return redirect('index')

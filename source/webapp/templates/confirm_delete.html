@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}Детальная информация{% endblock %}
+{% block title %}Удаление товара{% endblock %}
 
 {% block content %}
     <div class="container">
         <div class="row d-flex justify-content-center card-margin">
             <div class="col-8 card text-bg-dark">
-                <div class="row card-padding">
+                <div class="row card-padding title-delete">
+                    <h3>Вы точно хотите удалить продукт?</h3>
+                </div>
+                <div class="row">
                     <div class="col-6 image-margin">
                         <img src="{{ product.image }}" class="img-fluid" alt="{{ product.name }}">
                     </div>
@@ -32,12 +35,12 @@
                             added: {{ product.added_at }}
                         </p>
                         <div class="row margin-bottom-buttons">
-                            <div class="col-5">
-                                <a class="btn btn-primary edit-buttons-detail" href="{% url 'product_edit' product.pk %}"
-                                   role="button">Изменить</a>
+                            <div class="col-4">
+                                <a class="btn btn-primary edit-buttons" href="{% url 'products_view' %}"
+                                   role="button">Отмена</a>
                             </div>
                             <div class="col-3">
-                                <a class="btn btn-danger" href="{% url 'product_delete' product.pk %}" role="button">Удалить</a>
+                                <a class="btn btn-danger" href="{% url 'confirm_delete' product.pk %}" role="button">Удалить</a>
                             </div>
                         </div>
                     </div>
