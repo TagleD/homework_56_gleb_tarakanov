@@ -1,0 +1,172 @@
+[
+{
+  "model": "webapp.category",
+  "pk": 1,
+  "fields": {
+    "category": "rifles",
+    "description": "Оружие для дальнего боя. Имеет весомый урон, хорошую точность и отличную скорострельность. Не подходит для ближнего боя."
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 2,
+  "fields": {
+    "category": "melee",
+    "description": "Оружие для тех, кто уверен в своих движениях и технике. Может выручить в крайнем случае."
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 4,
+  "fields": {
+    "category": "pistol",
+    "description": "Надежное личное оружие, хотя их урон и мощность средние по сравнению с другим оружием, таким как снайперские винтовки и дробовики."
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 5,
+  "fields": {
+    "category": "sniper",
+    "description": "Хотя снайперские винтовки подходят для столкновений на дальних дистанциях, они медленно перезаряжаются и стреляют, поэтому для достижения максимального эффекта требуется точная стрельба."
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 4,
+  "fields": {
+    "category": 4,
+    "name": "Apparition",
+    "description": "Apparition — культовый вариант Arasaka JKE-X2 Kenshin в Cyberpunk 2077.",
+    "added_at": "2023-02-19T06:48:09.418Z",
+    "coast": "300.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/d/dc/Kenshin_Frank.png/revision/latest?cb=20220330180235"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 5,
+  "fields": {
+    "category": 1,
+    "name": "Militech M251s Ajax",
+    "description": "M251s Ajax — силовая штурмовая винтовка производства Militech в Cyberpunk 2077\r\n.",
+    "added_at": "2023-02-19T07:02:57.129Z",
+    "coast": "699.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/f/f3/Ajax_Default.png/revision/latest?cb=20220720083608"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 6,
+  "fields": {
+    "category": 1,
+    "name": "Prejudice",
+    "description": "Одна из лучших винтовок, когда-либо украшавших планету. Относитесь к ней с уважением, которого она заслуживает.",
+    "added_at": "2023-02-19T07:04:17.759Z",
+    "coast": "1099.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/0/05/Masamune_Rogue.png/revision/latest?cb=20211214122620"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 9,
+  "fields": {
+    "category": 1,
+    "name": "Hammer",
+    "description": "Молот — тупое оружие ближнего боя в Cyberpunk 2077.\r\nС молотком в руке любая проблема кажется гвоздем.\r\n                        ",
+    "added_at": "2023-02-19T07:13:46.384Z",
+    "coast": "900.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/d/da/Hammer_Default.png/revision/latest?cb=20220316180444"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 10,
+  "fields": {
+    "category": 1,
+    "name": "Pride",
+    "description": "Гордость — это культовый вариант конституционной свободы оружия в Cyberpunk 2077. Повсюду памятник пистолетам.",
+    "added_at": "2023-02-19T07:15:48.852Z",
+    "coast": "1049.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/0/03/Liberty_Rogue.png/revision/latest?cb=20220823110313"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 11,
+  "fields": {
+    "category": 4,
+    "name": "Seraph",
+    "description": "Серафим — культовый вариант конституционной свободы оружия в Cyberpunk 2077.\r\nБлижайший спутник Падре. Судья, присяжные и палач для божественной справедливости - все в одном лице.",
+    "added_at": "2023-02-19T07:17:33.713Z",
+    "coast": "1300.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/c/cd/Liberty_Padre.png/revision/latest?cb=20220216143641"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 13,
+  "fields": {
+    "category": 1,
+    "name": "Techtronika SPT32 Grad",
+    "description": "From this weapon there is no cover. The SPT32 Grad is a Power Sniper Rifle manufactured by Techtronika in Cyberpunk 2077.",
+    "added_at": "2023-02-19T07:40:18.532Z",
+    "coast": "1500.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/b/b2/Grad_Default.png/revision/latest?cb=20220724205333"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 14,
+  "fields": {
+    "category": 1,
+    "name": "Tsunami Nekomata ",
+    "description": "Precision without compromise. The Nekomata is a Tech Sniper Rifle manufactured by Tsunami Defense Systems in Cyberpunk 2077.\r\n                        ",
+    "added_at": "2023-02-19T07:41:01.091Z",
+    "coast": "789.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/8/8c/Nekomata_Default.png/revision/latest?cb=20220724094946"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 15,
+  "fields": {
+    "category": 5,
+    "name": "Overwatch",
+    "description": "A sniper rifle that belonged to Panam. Increased reload spead and lethal accuracy - a rifle you can count on. Overwatch is an Iconic variant of the Techtronika SPT32 Grad Power Sniper Rifle in Cyberpunk 2077.",
+    "added_at": "2023-02-19T07:41:49.475Z",
+    "coast": "900.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/c/c3/Grad_Panam.png/revision/latest?cb=20220724205353"
+  }
+},
+{
+  "model": "webapp.product",
+  "pk": 16,
+  "fields": {
+    "category": 2,
+    "name": "Stinger",
+    "description": "This iconic knife is the signature weapon of Aldecaldos member Driss Meriana, also known as Scorpion. Small but incredibly deadly. It belonged to Scorpion, a nomad of the Aldecaldos clan.",
+    "added_at": "2023-02-19T07:44:06.797Z",
+    "coast": "500.00",
+    "image": "https://static.wikia.nocookie.net/cyberpunk/images/0/0b/Knife_Stinger.png/revision/latest?cb=20220316132238"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$IVZwrjvhXKd0anTPLCJ5yV$0zmsMla42HqiloaqKTybwuLwVnWEiMudM1kRZs7Sm+I=",
+    "last_login": "2023-02-18T18:11:33.195Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-02-18T18:11:21.820Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

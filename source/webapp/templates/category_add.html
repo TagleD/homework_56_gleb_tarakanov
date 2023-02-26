@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Добавление категории{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row d-flex justify-content-center card-margin">
+            <div class="col-6 card text-bg-dark card-padding card-padding-bottom">
+                <form action="{% url 'category_add' %}" method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <h2>Добавление категории</h2>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Название категории</label>
+                        <input type="text" id="category" name="category" class="form-control"
+                               placeholder="sniper">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Введите описание категории</label>
+                        <textarea id="description" name="description" rows="15" cols="53"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary green">Добавить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
