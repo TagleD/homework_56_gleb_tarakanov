@@ -14,7 +14,7 @@ class CategoryChoice(TextChoices):
 class Product(models.Model):
     name = models.CharField(max_length=100, null=False, blank=False, verbose_name='Наименование')
     description = models.TextField(max_length=2000, null=True, blank=False, verbose_name="Описание")
-    image = models.TextField(max_length=3000, verbose_name="URL картинки")
+    image = models.CharField(max_length=3000, verbose_name="URL картинки")
     category = models.CharField(
         max_length=100,
         null=True,
